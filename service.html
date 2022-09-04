@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AYURVEDA</title>
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		(function (d) {
+			var config = {
+				kitId: 'iil5rjy',
+				scriptTimeout: 3000,
+				async: true
+			},
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+</head>
+
+<body>
+
+	<!--　ヘッダー　-->
+	<header class="header">
+		<nav>
+			<ul class="nav header-nav">
+				<li class="nav__item"><a href="index.html">Home</a></li>
+				<li class="nav__item"><a href="service.html">Service</a></li>
+				<li class="nav__item"><a href="about.html">About</a></li>
+				<li class="nav__item"><a href="column.html">Column</a></li>
+				<li class="nav__item"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<figure class="sns">
+			<img src="images/ig.png" alt="インスタグラム" class="sns__ig header__ig">
+			<img src="images/fb.png" alt="フェイスブック" class="sns__fb header__fb">
+		</figure>
+	</header>
+
+	<div class="ham">
+		<input type="checkbox" class="ham__btn" id="ham__btn">
+		<label for="ham__btn" class="ham__icon"><span class="ham__navicon"></span></label>
+		<ul class="ham-menu">
+			<li class="ham-menu__list"><a href="index.html" class="ham-menu__link">Home</a></li>
+			<li class="ham-menu__list"><a href="service.html" class="ham-menu__link">Service</a></li>
+			<li class="ham-menu__list"><a href="about.html" class="ham-menu__link">About</a></li>
+			<li class="ham-menu__list"><a href="column.html" class="ham-menu__link">Column</a></li>
+			<li class="ham-menu__list"><a href="contact.html" class="ham-menu__link">Contact</a></li>
+			<li class="ham-menu__list">
+				<img src="images/ig.png" alt="インスタグラム" class="ham__ig">
+				<img src="images/fb.png" alt="フェイスブック" class="ham__fb">
+			</li>
+		</ul>
+	</div>
+
+	<!--　パンくずリスト　-->
+	<section class="pankuzu-list">
+		<h2 class="pankuzu-list__heading-lv2">
+			<div class="font-anim">Service
+			</div>
+		</h2>
+		<h4 class="pankuzu-list__heading-lv4 font-anim"><span class="pankuzu-list__line"><a href="index.html"
+					class="pankuzu-list__link">Home</a></span>
+			Service</h4>
+	</section>
+
+	<!-- メイン　-->
+	<section class="service-main">
+		<div id="treatment" class="service-main__wrap">
+			<figure class="service-main__img-wrap fadeout1">
+				<img src="images/treatment.jpg" class="service-main__img0">
+			</figure>
+			<div class="service-main__text-wrap fadeout1">
+				<p class="service-main__sub-title">Treatment</p>
+				<p class="service-main__title">トリートメント</p>
+				<p class="service-main__desc">健康的な生活づくり</p>
+				<p class="service-main__text">
+					アーユルヴェーダの薬草オイルを用いて、状態に応じたトリートメントをさせていただきます。お気軽にご相談ください。女性専用の対応となりますのでご了承くださいませ。</p>
+				<p class="service-main__fee">90分　15,000円（税込）</p>
+			</div>
+		</div>
+		<div id="astrlogy" class="service-main__wrap2">
+			<figure class="service-main__img-wrap fadeout1">
+				<img src="images/astrlogy.png" class="service-main__img-wrap service-main__img">
+			</figure>
+			<div class="service-main__text-wrap fadeout1">
+				<p class="service-main__sub-title">Astrology</p>
+				<p class="service-main__title">占星術</p>
+				<p class="service-main__desc">お探しのものがきっと見つかります</p>
+				<p class="service-main__text">
+					アーユルヴェーダでは、人の人生は惑星の影響を受けていると考えられています。惑星との関係を読み解くことによって、自分らしい人生を歩むために役立てていただけます。</p>
+				<p class="service-main__fee">60分　15,000円（税込）</p>
+			</div>
+		</div>
+		<div id="diet-remedy" class="service-main__wrap3">
+			<figure class="service-main__img-wrap fadeout1">
+				<img src="images/diet-remedy.jpg" class="service-main__img-wrap service-main__img2">
+			</figure>
+			<div class="service-main__text-wrap fadeout1">
+				<p class="service-main__sub-title">Diet remedy</p>
+				<p class="service-main__title">食事療法</p>
+				<p class="service-main__desc">命を育む食事</p>
+				<p class="service-main__text">
+					アーユルヴェーダは命の食事からとされお薬のような役割を持つSpiceと食事の持つ力を融合させ日本人に会うようなレシピを考察し、料理教室を開催しています。開催は不定期となりますので、決まり次第のご案内となります。
+				</p>
+			</div>
+		</div>
+		<div id="online-school" class="service-main__wrap4">
+			<figure class="service-main__img-wrap fadeout1">
+				<img src="images/online-school.jpg" class="service-main__img-wrap service-main__img3">
+			</figure>
+			<div class="service-main__text-wrap fadeout1">
+				<p class="service-main__sub-title">Online school</p>
+				<p class="service-main__title">オンライン講座</p>
+				<p class="service-main__desc">アーユルヴェーダの学びを活かす</p>
+				<p class="service-main__text">オンライン講座にて講師を務めています。好きな時間に好きな場所で、自由に学んでいただけますので、大変ご好評をいただいております。是非ご活用ください。
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- フッター　-->
+	<hr>
+	<footer class="footer">
+		<nav>
+			<ul class="nav">
+				<li class="nav__item nav__footer-item"><a href="index.html">Home</a></li>
+				<li class="nav__item nav__footer-item"><a href="service.html">Service</a></li>
+				<li class="nav__item nav__footer-item"><a href="about.html">About</a></li>
+				<li class="nav__item nav__footer-item"><a href="column.html">Column</a></li>
+				<li class="nav__item nav__footer-item"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<figure class="sns footer__sns">
+			<img src="images/ig.png" alt="インスタグラム" class="sns__ig sns__ig-footer">
+			<img src="images/fb.png" alt="フェイスブック" class="sns__fb sns__fb-footer">
+		</figure>
+		<div class="policy">
+			<a href="policy.html">プライバシーポリシー</a>
+		</div>
+		<p class="copy-right">Copyright ©️ AYUWEDA Sri Lanka AYURVEDA</p>
+	</footer>
+
+</body>
+
+</html>

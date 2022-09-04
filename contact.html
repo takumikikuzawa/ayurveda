@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AYURVEDA</title>
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		(function (d) {
+			var config = {
+				kitId: 'iil5rjy',
+				scriptTimeout: 3000,
+				async: true
+			},
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+		})(document);
+	</script>
+</head>
+
+<body>
+
+	<!--　ヘッダー　-->
+	<header class="header">
+		<nav>
+			<ul class="nav header-nav">
+				<li class="nav__item"><a href="index.html">Home</a></li>
+				<li class="nav__item"><a href="service.html">Service</a></li>
+				<li class="nav__item"><a href="about.html">About</a></li>
+				<li class="nav__item"><a href="column.html">Column</a></li>
+				<li class="nav__item"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<figure class="sns">
+			<img src="images/ig.png" alt="インスタグラム" class="sns__ig header__ig">
+			<img src="images/fb.png" alt="フェイスブック" class="sns__fb header__fb">
+		</figure>
+	</header>
+
+	<div class="ham">
+		<input type="checkbox" class="ham__btn" id="ham__btn">
+		<label for="ham__btn" class="ham__icon"><span class="ham__navicon"></span></label>
+		<ul class="ham-menu">
+			<li class="ham-menu__list"><a href="index.html" class="ham-menu__link">Home</a></li>
+			<li class="ham-menu__list"><a href="service.html" class="ham-menu__link">Service</a></li>
+			<li class="ham-menu__list"><a href="about.html" class="ham-menu__link">About</a></li>
+			<li class="ham-menu__list"><a href="column.html" class="ham-menu__link">Column</a></li>
+			<li class="ham-menu__list"><a href="contact.html" class="ham-menu__link">Contact</a></li>
+			<li class="ham-menu__list">
+				<img src="images/ig.png" alt="インスタグラム" class="ham__ig">
+				<img src="images/fb.png" alt="フェイスブック" class="ham__fb">
+			</li>
+		</ul>
+	</div>
+
+	<!--　パンくずリスト　-->
+	<section class="pankuzu-list">
+		<h2 class="pankuzu-list__heading-lv2">
+			<div class="font-anim">Contact
+			</div>
+		</h2>
+		<h4 class="pankuzu-list__heading-lv4 font-anim"><span class="pankuzu-list__line"><a href="index.html"
+					class="pankuzu-list__link">Home</a></span> Contact</h4>
+	</section>
+
+	<!--　コンタクトフォーム　-->
+	<section class="contact-form">
+		<p>
+			アーユルヴェーダについてご相談やご質問がある方は<br>
+			下記のお問い合わせフォームよりお問い合わせ下さい。<br><br>
+
+			お問い合わせフォーム<br>
+			<hr class="contact-form__line">
+			必要事項をご記入の上、送信ボタンを押してください。<br><br>
+
+		<form>
+			<label for="name">名前</label>
+			<input type="text" class="text contact-form__text" id="name">
+		</form>
+		<form>
+			<label for="tel">電話番号</label>
+			<input type="text" class="text contact-form__text2" id="tel">
+		</form>
+		<form>
+			<label for="mail">メールアドレス</label>
+			<input type="text" class="text contact-form__text3" id="mail">
+		</form>
+		<label for="contact">お問い合わせ内容</label>
+		<textarea name="message" class="textarea contact-form__text4" id="contact"></textarea>
+		</p>
+	</section>
+
+	<div class="sent">送信</div>
+
+	<!-- フッター　-->
+	<hr>
+	<footer class="footer">
+		<nav>
+			<ul class="nav">
+				<li class="nav__item nav__footer-item"><a href="index.html">Home</a></li>
+				<li class="nav__item nav__footer-item"><a href="service.html">Service</a></li>
+				<li class="nav__item nav__footer-item"><a href="about.html">About</a></li>
+				<li class="nav__item nav__footer-item"><a href="column.html">Column</a></li>
+				<li class="nav__item nav__footer-item"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<figure class="sns footer__sns">
+			<img src="images/ig.png" alt="インスタグラム" class="sns__ig sns__ig-footer">
+			<img src="images/fb.png" alt="フェイスブック" class="sns__fb sns__fb-footer">
+		</figure>
+		<div class="policy">
+			<a href="policy.html">プライバシーポリシー</a>
+		</div>
+		<p class="copy-right">Copyright ©️ AYUWEDA Sri Lanka AYURVEDA</p>
+	</footer>
+
+</body>
+
+</html>
